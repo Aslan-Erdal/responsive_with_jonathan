@@ -8,6 +8,74 @@ body {
     background-color: #6a8c7c;
 }
 
-section, div, article {
+/* section, div, article {
     border: 2px solid black;
+} */
+
+section {
+    width: min(1196px, 100%);
+    margin: 0 auto;  /* center an element inside his parent */
+}
+
+h1 {
+    margin: 50px 0;
+}
+
+img {
+    max-width: 100%; 
+    display: block; /* make my image block element */
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(30px ,5vW , 50px);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.white-box {
+    background-color: #fff;
+    padding: 30px;
+    gap: 20px;
+}
+
+
+/* CARDS */
+
+.cards {
+    width: min(1086, 100%);
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 35px;
+}
+
+.card img {
+    margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+    .white-box {
+        flex-direction: column;
+    }
+
+
+}
+@media (max-width: 960px) {
+    .cards{
+        flex-direction: column;
+    }
+
+    .card img {
+        align-self: center;
+    }
+
+
 }
